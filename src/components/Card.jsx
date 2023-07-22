@@ -6,11 +6,11 @@ export default function Card(props) {
     return (
         <div className="card-container">
             <div className="card-image-container">
-                <img src={`../public/${props.img}`} alt={props.img} className="card-image"/>
+                <img src={`${props.img}`} alt={props.img} className="card-image"/>
             </div>
             <div className="card-content d-block">
                 <div className="card-location d-flex">
-                    <img src="../public/maps logo.svg" alt="logo de maps"/>
+                    <img src="maps logo.svg" alt="logo de maps"/>
                     <h3>{props.country}</h3>
                     <a href={props.link}>View on Google Maps</a>
                 </div>
