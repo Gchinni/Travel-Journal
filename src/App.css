@@ -1,0 +1,148 @@
+* {
+  margin: 0; 
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+}
+
+body {
+  background: white;
+  border: 0 black solid;
+}
+
+/* HEADER */
+
+.header-container {
+  background-color: #F55A5A;
+  display: flex;
+  height: 55px;
+  place-content: center;
+}
+
+.header-logo {
+  width: 25px;
+}
+
+.header-text {
+  margin: auto 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -1.085px; 
+}
+
+
+/* DIV CARDS */
+
+.div-cards{
+  margin-top: 50px;
+}
+
+
+/* CARD */
+
+.card-container {
+  height: 280px;
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+}
+
+
+.card-image-container{
+  width: 35%; /* Ajusta el ancho deseado del contenedor */
+  height: 100%; /* Ajusta la altura deseada del contenedor */
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+
+.card-image {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor manteniendo sus proporciones */
+}
+
+.card-content{
+  width: 100%;
+  align-self: center;
+}
+
+.card-location{
+  align-items: center;
+}
+
+.card-location img{
+  width: 10px;
+  margin-right: 4px;
+}
+
+.card-location h3{
+  color: #2B283A;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.741px; 
+  margin: 0 15px 0 0;
+}
+
+.card-location a{
+  color: #918E9B;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-content h1{
+  margin: 10px 0 30px 0;
+  color: #2B283A;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+.card-content p{
+  margin: 0;
+}
+
+.card-date{
+  color: #2B283A;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal; 
+  margin-bottom: 5px;
+}
+
+.card-description{
+  color: #2B283A;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%; /* 15.36px */
+}
+
+@media (max-width: 750px) {
+
+  .card-container {
+    display: block;
+    margin: 10px auto;
+    height: auto;
+  }
+
+  .card-image-container{
+    width: 100%;
+    height: 150px;
+  }
+
+  .card-content{
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-location{
+    justify-content: center;
+  }
+
+}
